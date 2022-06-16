@@ -1,13 +1,16 @@
 <?php
 
+var_dump(require_once("config.php"));
 
-require_once("config.php");
+//carrega apenas um usuário
+//$root = new Usuario();
+//$root->loadbyId(4);
+//echo $root;
 
-$root = new Usuario();
+//carrega todos os usuarios
+var_dump($lista = Usuario::getList());
 
-$root->loadbyId(4);
-
-echo $root;
+echo json_encode($lista)
 
 
 ?>
