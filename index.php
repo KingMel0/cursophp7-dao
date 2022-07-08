@@ -35,13 +35,18 @@ $aluno->insert();
 echo $aluno;
 */
 
+/*
+Atualizar um usuario
 $usuario = new Usuario();
-
 $usuario->loadById(9);
-
 $usuario->update("jaylen", "brown");
+echo $usuario;
+*/
+
+$usuario = new Usuario();
+$usuario->loadById(9);
+$usuario->delete();
 
 echo $usuario;
-
 
 ?>
